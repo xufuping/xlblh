@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>新闻文本详细页</title>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/newsword.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/log.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/newsword.css">
+</head>
+<body>
+<!--头部-->
+    <div class="above">
+        <a href="shouye.html"><img src="images/logo.jpg" alt="log img" class="log"></a>
+        <input type="text" id="Search_input" placeholder="请输入学校名称">
+        <button id="Search_span">搜索</button>
+        <a href="" id="login">登录</a>
+        <a href="register.html" id="regist">注册</a>
+        <a href="manCenter.html" target="_Blank" id="login_userName"></a>
+        <a href="#" id="login_close">注销</a>
+    </div>
+    <!-- 登陆界面 -->
+    <div id="log_card">
+        <img src="images/close.jpg" alt="close" id="close">
+        <p class="log_card_log">登录</p>
+        <span id="userName">帐号</span>
+        <input type="text" class="userName"><br/>
+        <span id="password">密码</span>
+        <input type="password" class="password">
+        <div class="log_btn">登 录</div>
+    </div>
+</div>
+<!-- 主体内容 -->
+<div class="newsword_wrap">
+    <div class="newsword_contain">
+	<!-- <h2 class="newsTitle">新闻标题一</h2>
+    <h3 class="newsTime">新闻上传时间</h3> 
+    <hr>
+    <div class="news_img"></div>
+        <div class="news_text">
+    <h4 class="orTitle">
+        原标题：山东海阳通报英才实验学校食材问题调查结果 3人被拘6人被停职</h4>
+    <p>新华网济南１０月１５日电（记者袁军宝）山东海阳市１５日通报海阳市英才实验学校食堂食材问题调查处理情况，海阳市英才
+           实验学校食堂负责人于春丽等３人被给予行政拘留１５天的处罚，政府相关职能部门６名工作人员被停职调查。</p>
+    
+    　　<p>海阳市的通报称，市场监管局共对学校食堂大米、健康家庭粉、豆腐、红生猪肉、西红柿、生猪肉馅、馒头等２２个品种的食材
+           进行了抽样，鉴于本地检测中心技术上的局限性，同时也为了体现检测结果的公正性，在海阳市检验检测中心检测了非即食干坛紫菜、
+           原味台式烤肠、馒头三个品种，其余１９个品种则委托第三方检测机构青岛英格尔检测技术服务有限公司进行检测。经检测，２２个品
+           种全部合格。</p>
+    
+    　　 <p>关于食堂疑以“猪饲料”“鸡饲料”为食材的问题，海阳市的通报称，经调查，学校食堂从小纪镇小纪村村民赵某处购买用饲料
+            编织袋装的玉米粒，到小纪村村民孙某处加工成玉米面，然后又用原饲料编织袋盛装拉回学校食堂。可以确证，学校用饲料袋装了供食用的玉米面，但绝不存在以“猪饲料”或“鸡饲料”为食材的问题。</p>
+    
+    　　 <p>对于食堂疑使用“淋巴肉”等劣质肉材的问题，海阳市也进行了调查。海阳市的通报称，经调查，网上流传的一张用编织袋装的
+            “淋巴肉”照片，是食堂厨师姜某每天负责在切肉时把不适宜食用的部位剔除，积攒到一定数量后由厨师刁某带回家喂养动物。调查组
+            第一时间赶往刁某家中调查，在其冰箱里发现了上次带回的尚未用完的此类肉材。当时，被学生家长发现并拍照的就是刁某积攒了几天后尚未来得及拿回家的此类肉材。关于颜色变深的一盆绞好的猪肉，经查系１０月９日８时左右厨师将“十一”假期前存放在冷库内的一盆绞好的猪肉拿出来化冻，准备调味后包包子用，因化冻颜色变深。经抽样检测，该肉馅检测结果合格。</p>
+    
+    　　 <p>此外，对于相关猪肉供应公司否认给学校供肉的问题、食堂疑给学生食用剩菜剩饭及变质鸡蛋问题、食堂“烂西红柿”问题、“
+            学校食堂 从业人员没有健康证”问题、“学校１０００多名学生拉肚子、呕吐”问题、“学校要求学生饭前喝药、怕吃坏肚子”等问题和传言，海阳市在通报中都给出调查结果。</p>
+    
+    　　 <p>调查发现，学校在进肉管理中没有做到肉证同时接收，购食材时存在标准低、质量差的问题，部分学校食堂从业人员健康证过期
+            或并未取得健康证。但网上流传的变质鸡蛋问题，其实是食堂１０月９日当天加工的、学生早餐剩余的茶叶蛋，并非传言所说的臭鸡蛋。“学校１０００多名学生拉肚子、呕吐”为信息发布人于某编造，“学校要求学生饭前喝药、怕吃坏肚子”也确定并无此事。</p>
+    
+    　　 <p>根据调查结果及相关规定，海阳市对海阳市英才实验学校给予罚款２０万元等行政处罚；海阳市英才实验学校食堂负责人于春丽，
+            未按规定查验采购猪肉的检疫证明、购进未经检疫的猪肉，违反了《中华人民共和国食品安全法》相关规定，给予行政拘留１５天的处
+            罚。海阳市英才实验学校食堂管理人员杨春勇被给予行政拘留１５天的处罚；海阳市小纪镇生猪屠宰点经营者马殿玲逃避检疫，被罚款１０万元，并给予行政拘留１５天的处罚；民主市场林涛放心肉经营者赵凤文，未经依法核准登记领取营业执照，擅自进行猪肉经营活动，被给予没收违法所得２２７４７．２元、罚款１０万元的处罚。</p>
+    
+    　　 <p>此外，海阳市纪检监察部门对政府相关职能部门工作人员履职中存在的问题，启动了问责调查程序，已对监管失职的６名工作人
+            员停职调查，待调查结束后，将根据调查结果依法依规严肃处理。</p>
+    
+    　　 <p>海阳市在通报中还表示，这一事件的发生，对学生和家长造成了很大的伤害，对此深感自责、深感愧疚。在今后的工作中，将吸
+            取教训、时刻警醒，全面细致推进各项整改措施，下最大决心、用最大气力抓好食品安全、学校管理及其他各项民生工作，坚决杜绝此类事件再次发生。</p>
+      </div>-->
+        </div> 
+
+        
+    <h2 class="word_h2">评论区</h2>
+    <hr>
+    <div class="comment">
+       <!--  <p class="word01">管理者</p>
+       <p class="word02">新闻很棒，继续加油</p>
+       <span class="word03">2016-10-14  10:00</span>
+       <p class="word01">管理者</p>
+       <p class="word02">新闻很棒，继续加油</p>
+       <span class="word03">2016-10-14  10:00</span>
+       <p class="word01">管理者</p>
+       <p class="word02">新闻很棒，继续加油</p>
+       <span class="word03">2016-10-14  10:00</span>
+       <p class="word01">管理者</p>
+       <p class="word02">新闻很棒，继续加油</p>
+       <span class="word03">2016-10-14  10:00</span> -->
+    </div>
+    <div class="publish">
+		<div class="div"></div>
+		<span>发表评论</span>
+ 		<textarea class="txt">回复内容</textarea>
+   		<button class="submit">提交</button>
+        <button class="charuimg">插入图片</button>
+	</div>
+</div>
+<div class="mancenter_bottom">
+    <hr class="mancenter_hr">
+    <!-- 版权信息 -->
+	<div class="mancenter_bottom_container">
+	    <p>版权所有 | 安徽财经大学C&U O-EXPO创业团队 | 技术负责 | 重庆邮电大学经济管理学院EMIT技术联盟 </p>
+      <p>指导负责 | 安徽财经大学马克思学院 汪先平 | 管理邮箱 | hihunter@163.com</p>
+    </div>
+</div>
+<div id="mask"></div>
+</body>
+</html>

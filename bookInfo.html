@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bookInfo.css">
+	<script type="text/javascript" src="js/bookInfo.js"></script>
+	<script type="text/javascript" src="js/log.js"></script>
+	<title>图书信息</title>
+</head>
+<body>
+<!--头部-->
+	<div class="above">
+		<a href="shouye.html"><img src="images/logo.jpg" alt="log img" class="log"></a>
+		<input type="text" id="Search_input" placeholder="请输入学校名称">
+		<button id="Search_span">搜索</button>
+		<a href="" id="login">登录</a>
+    	<a href="register.html" id="regist">注册</a>
+    	<a href="manCenter.html" target="_Blank" id="login_userName"></a>
+		<a href="#" id="login_close">注销</a>
+	</div>
+<!-- 登录界面 -->
+	<div id="log_card">
+		<img src="images/close.jpg" alt="close" id="close">
+		<p class="log_card_log">登录</p>
+		<span id="userName">帐号</span>
+		<input type="text" class="userName"><br/>
+		<span id="password">密码</span>
+		<input type="password" class="password">
+		<div class="log_btn">登 录</div>
+	</div>
+<!-- 导航 -->
+	<div class="nav">
+		<div class="nav_content">
+			<ul class="nav_content_ul">
+				<li class="nav_content_ul_first"><a href="compusCulture.html" class="nav_content_li">校园文化</a></li>
+				<li><a href="newThings.html" class="nav_content_li">新鲜事儿</a></li>
+				<li><a href="liudaliuda.html" class="nav_content_li">溜达溜达</a></li>
+				<li><a href="learn.html" class="nav_content_li">我要学习</a></li>
+				<li><a href="talk.html" class="nav_content_li">唠唠嗑儿</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- 主体 -->
+	<div class="bookInfo">
+		<h3 class="bookInfo_title">图书简介</h3>
+		<div class="bookInfo_contain h410" id="bookInfo_contain">
+			<!-- <img src="" class=".bookImg">
+			<div class="bookInfo_word">
+				<p>书名：《数据挖掘》</p>
+				<p>出版社：电子工业出版社</p>
+				<p>作者：</p>
+				<p class="bookSum">概要：</p>
+					<span class="bookSum_contain">             数据挖掘（英语：Data mining），又译为资料探勘、数据采矿。它是数据库知识发现（英语：Knowledge-Discovery in Databases，简称：KDD)中的一个步骤。数据挖掘一般是指从大量的数据中通过算法搜索隐藏于其中信息的过程。数据挖掘通常与计算机科学有关，并通过统计、在线分析处理、情报检索、机器学习、专家系统（依靠过去的经验法则）和模式识别等诸多方法来实现上述目标。
+					</span>		
+			</div> -->
+		</div>
+	</div>
+<!-- 尾部 -->
+<div class="footer">   
+	<div class="mancenter_bottom">
+	    <hr class="mancenter_hr">
+	<!-- 版权信息 -->
+		<div class="mancenter_bottom_container">
+		    <p>版权所有 | 安徽财经大学C&U O-EXPO创业团队 | 技术负责 | 重庆邮电大学经济管理学院EMIT技术联盟 </p>
+	    	<p>指导负责 | 安徽财经大学马克思学院 汪先平 | 管理邮箱 | hihunter@163.com</p>
+	    </div>
+	</div>
+</div>
+<div id="mask"></div>
+</body>
+</html>

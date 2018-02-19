@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>校园博览会</title>
+<link rel="stylesheet" type="text/css" href="css/shouye.css" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/shouye.js"></script>
+<script type="text/javascript" src="js/log.js"></script>
+</head>		
+
+<body>
+<!-- 头部登陆注册 -->
+<div class="head">
+	<div class="head_warp">
+		<img src="images/logo.jpg" alt="log img" class="log"><a href="#" id="login">登录</a><a href="register.html" id="regist">注册</a><a href="manCenter.html" target="_Blank" id="login_userName"></a><a href="#" id="login_close">注销</a>
+	</div>
+</div>
+<!-- 中间主体内容 -->
+<div class="contain">
+	<!-- 登陆界面 -->
+	<div id="log_card">
+		<img src="images/close.jpg" alt="close" id="close">
+		<p class="log_card_log">登录</p>
+		<span id="userName">帐号</span>
+		<input type="text" class="userName"><br/>
+		<span id="password">密码</span>
+		<input type="password" class="password">
+		<div class="log_btn">登 录</div>
+	</div>
+<!-- <div id="playBox"> -->
+<!--整个轮播盒子-->
+<!-- 	<ul class="oUlplay">
+		<li><a href="#" class="img"><img src="images/shouye.jpg"  alt="1" /></a></li>
+        <li><a href="#" class="img"><img src="images/shouye.jpg"    alt="2" /></a></li>
+        <li><a href="#" class="img"><img src="images/shouye.jpg"   alt="3" /></a></li>
+	</ul> -->
+	<!--上面是各个图片，如果添加图片就在这里添加-->
+<!-- 	<p class="pre"></p>
+    <p class="next"></p>
+	<div class="smalltitle">
+		<ul>
+			<li class="thistitle"></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div> -->
+	<!--我是焦点轮滑-->
+<!-- </div> -->
+	<!-- 轮播 --><!-- 图片1349px;593px; -->
+	<div class="Carousel">
+    	<div class="Carousel_main">
+        <ul class="Carousel_ul">
+            	<li><a href="#" class="img"><img src="images/index_1.jpg"  alt="1" /></a></li>
+            	<li><a href="#" class="img"><img src="images/index_2.jpg"    alt="2" /></a></li>
+            	<li><a href="#" class="img"><img src="images/index_3.jpg"   alt="3" /></a></li>
+        </ul>
+    	</div>
+    	<p class="Carousel_left"></p>
+    	<p class="Carousel_right"></p>
+    	<div class="Carousel_span">
+        	<p>
+            	<span class="Carousel_span_one"></span>
+            	<span></span> 
+            	<span></span>
+        	</p>
+    	</div>
+	</div>
+	<!-- 搜索框 -->
+	<div class="Search">
+		<input type="text" name="Search" id="Search_input" placeholder="请输入学校名称">
+		<span id="Search_span">搜索</span>
+	</div>
+	<!-- 高校盒子 -->
+	<div class="box">
+		<div class="hot_school">热门高校</div>
+		<ul class="school_ul">
+			<!-- <li class="school"><a href="">安徽财经大学</a></li>
+			<li class="school"><a href="">安徽财经大学</a></li>
+			<li class="school"><a href="">安徽财经大学</a></li>
+			<li class="school"><a href="">安徽财经大学</a></li>
+			<li class="school"><a href="">安徽财经大学</a></li>
+			<li class="school"><a href="">安徽财经大学</a></li>
+			<li class="school"><a href="">安徽财经大学</a></li>
+			<li class="school"><a href="">安徽财经大学</a></li>
+			<li class="school"><a href="">安徽财经大学</a></li>
+			<li class="school"><a href="">安徽财经大学</a></li> -->
+		</ul>
+	</div>
+</div>
+<!-- 尾部介绍 -->
+<div class="footer">
+    <hr class="footer_hr">
+    <!-- 版权信息 -->
+	<div class="footer_bottom_container">
+	    <p>版权所有 | 安徽财经大学C&U O-EXPO创业团队 | 技术负责 | 重庆邮电大学经济管理学院EMIT技术联盟 </p>
+	    <p>指导负责 | 安徽财经大学马克思学院 汪先平 | 管理邮箱 | hihunter@163.com</p>
+    </div>
+</div>
+<div id="mask"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>修改资料</title>
+	<link rel="stylesheet" type="text/css" href="css/updatedata.css">
+</head>
+<body>
+<div class="updatedata_box">
+    <!--修改资料页面的logo-->
+	<a href="shouye.html"><div ><img src="images/logo.jpg" class="updatedata_logo"><span>修改资料</span></div></a>
+	<!--修改资料页面内容-->
+	<div class="updatedata_container">
+		<h3>头像</h3>
+		<p class="picture" id="picture" alt="请上传头像"></p>
+		<input type="file"  id="file" multiple accept="image/*"onchange="handleFiles(this)" alt="请上传头像">
+		<p>昵称<input type="text" id="userName"></p>
+		<p>密码<input type="passWord" id="passWord"></p>
+		<p>确认密码<input type="passWord" id="agpassWord"></p>
+		<p>邮箱<input type="text" id="email"></p>
+		<p>学校<input type="text" id="schoolname"></p>
+		<p>学号<input type="text" id="studentnumber"></p>
+		<p class="input07">验证码<input type="text" id="imgCode"></p>
+		<p class="checked_box"><a href="xybl/ImageCode.do"></a></p>
+		<p class="updatedata_login" id=""><a href="##">修改</a></p>
+	</div>
+</div>
+<div class="updatedata_bottom">
+    <hr class="updatedata_hr">
+    <!-- 版权信息 -->
+	<div class="updatedata_bottom_container">
+	    <p>版权所有 | 安徽财经大学C&U O-EXPO创业团队 | 技术负责 | 重庆邮电大学经济管理学院EMIT技术联盟 </p>
+	    <p>指导负责 | 安徽财经大学马克思学院 汪先平 | 管理邮箱 | hihunter@163.com</p>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/updatedata.js"></script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+body, div, ul,li,h2, h3, h4,form, input,p{
+	margin: 0;
+	padding: 0;	
+}
+body{
+	font-family: "微软雅黑";
+}
+/*头部*/
+.above{
+	width: auto;
+	width: 1000px;
+	height: 50px;
+	margin: 30px auto;
+	display: block;
+	position: relative;
+}
+.log{
+	width: 160px;
+	height: 100%;
+	float: left;
+}
+#Search_input{
+	width: 512px;
+	height: 35px;
+	margin-left: 30px;
+	float: left;
+	margin-top: 11px;
+	border:1px #e0e0e0 solid;
+}
+#Search_span{
+	width:98px;
+	height: 39px;
+	background: #bbd441;
+	border: none;
+	float: left;
+	margin-left: -4px;
+	margin-top: 11px;
+	border-radius: 5px;
+}
+#login{
+	color: #999;
+	position: absolute;
+	right: 75px;
+	top: 0;
+	text-decoration: none;
+}
+#regist{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #999;
+	text-decoration: none;
+}
+#login_userName{
+	color: #999;
+	position: absolute;
+	right: 75px;
+	top: 0;
+	text-decoration: none;
+}
+#login_close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #999;
+	text-decoration: none;
+}
+/*登录界面*/
+#close{
+	width: 25px;
+	height: 25px;
+	float: right;
+}
+#log_card{
+	text-align: center;
+	display: none;
+	z-index: 101;
+	margin: 0 auto;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left:-257px; 
+	width: 515px;
+	height:324px;
+	background: #FFFFFF;
+}
+.log_card_log{
+	margin-top: 58px;
+	font-family: '微软雅黑';
+	font-size: 24px;
+	font-weight: bold;
+}
+#userName{
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: 20px;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+}
+#password{
+	display: inline-block;
+	margin-top: 24px;
+	margin-right: 20px;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+}
+.userName{
+	width: 241px;
+	height: 27px;
+}
+.password{
+	width: 241px;
+	height: 27px;
+}
+.log_btn{
+	margin-top: 35px;
+	margin-left: 160px;
+	width: 241px;
+	height: 42px;
+	line-height: 42px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+	background-color: #BED742;
+}
+
+/*导航*/
+.nav{
+	width: 100%;
+	height: 50px;
+	background-color: #bed742;
+}
+.nav_content_ul{
+	width: 780px;
+	margin: 0 auto;
+	list-style: none;
+	font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+}
+.nav_content_ul li{
+	float: left;
+	width: 156px;
+	line-height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	cursor: pointer;
+}
+.nav_content_li{
+	text-decoration: none;
+	color: #fff;
+} 
+/*主体*/
+.main{
+	width: 1000px;
+	margin: 0 auto;
+}
+/*视频轮播*/
+.learn{
+	width: 100%;
+	padding-top: 58px;
+	position: relative;
+}
+.bor{
+	border-bottom: 1px solid #666666;
+	padding-bottom: 18px;
+}
+.learn_content,.books{
+	width: 877px;
+	height: 338px;
+	margin: 0 auto;
+	margin-top: 30px;
+	overflow: hidden;
+}
+.learn_content a{
+	float: left;
+}
+.btn{
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+	bottom: 20px;
+}
+.btn_li{
+	float: left;
+	list-style: none;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-left: 5px;
+	cursor: pointer;
+	background-color: #aaa;
+}
+/*图书推荐*/
+.books_ul{
+	width: 682px;
+	height: 233px;
+	margin: 0 auto;
+}
+.books_li{
+	width: 125px;
+	cursor: pointer;
+	list-style: none;
+	float: left;
+	margin-right: 60px;
+	text-align: center;
+}
+.books_li_last{
+	margin-right: 0;
+}
+.book_img{
+	width: 123px;
+	height: 159px;
+	border: 1px solid #e7e7e7;
+	display: block;
+}
+.book_name{
+	font-family: "微软雅黑";
+	font-size: 18.67px;
+	color: #666;
+	font-weight: bold;
+	margin-top: 15px;
+	display: block;
+	text-decoration: none;
+}
+.book_press{
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #999;
+	font-weight: bold;
+	display: block;
+	margin-top: 10px;
+}
+.more a{
+	position: absolute;
+	right: 0;
+	bottom: 58px;
+	font-size: 16px;
+	color: #999;
+	font-weight: bold;
+	text-decoration: none;
+}
+/*尾部*/
+.footer{
+	width: 100%;
+}
+.footer_bottom{
+	width: 850px;
+	margin: 0 auto;
+	border-top: 1px solid #999;
+	font-size: 16px;
+	color: #999999;
+}
+.footer_bottom p{
+	text-align: center;
+	padding-top: 15px;
+
+}
+/*遮罩层*/
+#mask {
+	position: absolute; 
+	top: 0px;left: 0px;
+	display: none;
+	width: 100%;
+	/*height: 100%;*/
+	-moz-opacity: 0.7; 
+	opacity:.70; 
+	filter: alpha(opacity=70); 
+	background-color: #777;
+	z-index: 100;
+}
+/*动画效果*/
+.nav_content_ul li:hover {
+	background-color: #eaec63;
+	border-color: transparent;
+}
+.nav_content_ul li:hover .nav_content_li{
+	color: #333;
+}
+.active1{
+	background-color: red;
+}
+.active2{
+	background-color: #000;
+}

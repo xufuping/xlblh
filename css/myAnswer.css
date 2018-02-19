@@ -1,0 +1,203 @@
+body, div, ul,li,h2, h3, h4,form, input,p{
+	padding:0px;
+	margin:0px;
+}
+body{
+	font-family: "微软雅黑";
+}
+.mancenter_contain{
+	margin:0 auto;
+	width:1000px;
+}
+.mancenter_logo{
+	margin-top:30px;
+	width:160px;
+	height:50px;
+	background-color:#BED742;
+}
+.answer span{
+	position: absolute;
+    margin-top: 30px;
+    margin-left: 20px;
+ 	font-size:35px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	color:#333333;
+}
+.mancenter_msg{
+	margin-top:35px;
+	height:160px;
+}
+.mancenter_msg_box{
+	float:left;
+	width:230px;
+	height:160px;
+	background-color:#BED742;
+}
+.mancenter_msg_box1{
+	float:left;
+	margin-left:70px;
+	width:auto;
+	height:160px;
+}
+.user_name{
+	font-size:24px;
+	font-family:"微软雅黑";
+	font-weight:bold;
+	color:#333333;
+}
+.mancenter_msg_box1 h2 a{
+	margin-left:15px;
+	text-decoration:none;
+	font-size:16px;
+	font-family:"微软雅黑";
+	color:#C1C1C1;
+}
+.mancenter_msg_box1 p{
+	font-size:16px;
+	font-family:"微软雅黑";
+	color:#C1C1C1;
+	line-height:45px;
+}
+/*我的回答*/
+.mypost{
+	width: 100%;
+}
+.mypost_title{
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 20px;	
+}
+.bor{
+	border-bottom: 1px solid #666666;
+	padding-bottom: 17px;
+}
+.mypost_content{
+	width: 100%;
+	margin-top: 35px;
+}
+.mypost_content p{
+	width: 984px;
+	height: 83px;
+	border: 1px solid #e7e7e7;
+	margin-bottom: 30px;
+	padding-left: 14px;
+	padding-top: 13px;
+	font-size: 19px;
+	font-weight: bold;
+	position: relative;
+	cursor: pointer;
+}
+.Post_Name a{
+	text-decoration: none;
+	color: #333;
+}
+.Post_Username_1,.Post_Username_2,.Post_Date{
+	font-family:"微软雅黑";
+	font-size: 13.34px;
+	font-weight: bold;
+}
+.mypost_content_li_last{
+	margin-bottom: 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+.Post_Username_1{
+	position: absolute;
+	left: 813px;
+	top: 19px;
+	color: #999999;
+}
+.Post_Username_2{
+	position: absolute;
+	left: 813px;
+	bottom: 20px;
+	color: #999999;
+}
+.Post_Date{
+	position: absolute;
+	right: 18px;
+	bottom: 20px;
+	color: #999999;
+}
+
+/*分页*/
+.page{
+	width: 100%;
+	height: 35px;
+	display: block;
+	margin-bottom: 60px;
+	margin-top: 30px;
+	text-align: center;
+	position: relative;
+}
+.page_ul{
+	overflow: hidden;
+	display: inline-block;
+}
+.page_li,.page_change{
+	margin: 0;
+	padding: 0;
+	width: 33px;
+	height: 33px;
+	float: left;
+	list-style: none;
+	margin-right: 16px;
+	border: 1px solid #e7e7e7;
+	font-size: 16px;
+	font-weight: bold;
+	color: #666;
+	line-height: 33px;
+	text-align: center;
+	cursor: pointer;
+}
+.page .page_last{
+	margin-right: 0;
+}
+.page .page_change{
+	border: 1px solid #e7e7e7;
+	font-size: 16px;
+	font-weight: bold;
+	color: #666;
+	line-height: 33px;
+	text-align: center;
+	width: 73px;
+	height: 33px;
+}
+.page .page_next{
+	position: absolute;
+	right: 140px;
+}
+.page .page_prev{
+	position: absolute;
+	left: 140px;
+	
+}
+/*尾部*/
+.footer{
+	width: 100%;
+}
+.mancenter_hr{
+	margin:0 auto;
+    width:850px;
+ }
+.mancenter_bottom_container{
+	margin:0 auto;
+	width:1000px;
+	height:90px;
+ }
+.mancenter_bottom_container p{
+	padding-top:15px;
+ 	font-family:"微软雅黑";
+	font-size:16px;
+	text-align:center;
+	color:#999999;
+}
+/*动画效果*/
+.mypost_content p:hover{
+	background-color: #eaec63;
+}
+.page li:hover{
+	background-color: #eaec63;
+	color: #fff;
+}

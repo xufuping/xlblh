@@ -1,0 +1,375 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,a,div,img{
+	padding: 0; margin: 0;
+}
+body{
+	text-align: center;
+	/*overflow-x: hidden;*/
+}
+table{
+    border-collapse:separate;
+    border-spacing:0;
+}
+img {
+	border: 0px;
+    margin:0; 
+} 
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+}
+/*CSS初始化结束*/
+/*头部CSS*/
+.head{
+	width: 100%;
+	height: 50px;
+}
+.head_warp{
+	width: auto;
+	width: 1000px;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 30px;
+	display: block;
+	position: relative;
+}
+.log{
+	width: 160px;height: 100%;
+	float: left;
+}
+/*#login_input{
+	text-align: center;
+	width: 512px;
+	height: 35px;
+	margin-left: 30px;
+	float: left;
+	margin-top: 11px;
+	border:1px #e0e0e0 solid;
+}
+#searchButton{
+	text-align: center;
+	width:98px;
+	height: 39px;
+	background: #bbd441;
+	border: none;
+	float: left;
+	margin-left: -4px;
+	margin-top: 11px;
+	border-radius: 5px;
+}*/
+#login{
+	margin-left: 725px;
+	color: #999;
+}
+#regist{
+	margin-left: 30px;
+	color: #999;
+}
+#login_userName{
+	color: #999;
+	position: absolute;
+	right: 75px;
+	top: 0px;
+	text-decoration: none;
+}
+#login_close{
+	position: absolute;
+	right: 0;
+	top: 0px;
+	color: #999;
+	text-decoration: none;
+}
+
+/*内容*/
+.contain{
+	width: 100%;
+	overflow:hidden;
+}
+/*登录界面*/
+#close{
+	width: 25px;
+	height: 25px;
+	float: right;
+}
+#log_card{
+	text-align: center;
+	display: none;
+	z-index: 101;
+	margin: 0 auto;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left:-257px; 
+	width: 515px;
+	height:324px;
+	background: #FFFFFF;
+}
+.log_card_log{
+	margin-top: 58px;
+	font-family: '微软雅黑';
+	font-size: 24px;
+	font-weight: bold;
+}
+#userName{
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: 20px;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+}
+#password{
+	display: inline-block;
+	margin-top: 24px;
+	margin-right: 20px;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+}
+.userName{
+	width: 241px;
+	height: 27px;
+}
+.password{
+	width: 241px;
+	height: 27px;
+}
+.log_btn{
+	margin-top: 35px;
+	margin-left: 160px;
+	width: 241px;
+	height: 42px;
+	line-height: 42px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+	background-color: #BED742;
+}
+
+/*幻灯片CSS开始*/
+.Carousel {
+	width:100%;
+	height:593px;
+	margin:0 auto;
+	position: relative;
+}
+.Carousel_main{
+	width:100%;
+	position: absolute;
+	left:0;
+	top:0;
+}
+.Carousel_main li a{
+	display: block;
+	width: 1349px;
+	height: 593px;
+}
+.Carousel_main li img {
+	display:block;
+	width:100%;
+	height:593px;
+	position: absolute;
+	left:0;
+	top:0;
+}
+.Carousel_span {
+	width:1367px;
+	height:35px;
+	position: absolute;
+	left:0;
+	bottom:0;
+	zoom:1;
+}
+.Carousel_span span {
+	width:15px;
+	height:15px;
+	display:block;
+	float:left;
+	margin-left:10px;
+	background: url(../images/dot.png) no-repeat left bottom;
+}
+.Carousel_span p {
+	width:100px;
+	height:35px;
+	margin:0 auto;
+}
+.Carousel_span .Carousel_span_one{
+	background: url(../images/dot.png) no-repeat left top;
+}
+.Carousel_left {
+	width:57px;
+	height:57px;
+	cursor: pointer;
+	background:#000 url(../images/ad_ctr.png) no-repeat 5px -15px;
+	filter:alpha(opacity:50);opacity:0.5;
+	position: absolute;
+	left:202px;
+	top:235px;
+	display:none;
+}
+.Carousel_right {
+	width:57px;
+	height:57px;
+	cursor: pointer;
+	background:#000 url(../images/ad_ctr.png) no-repeat -5px -105px;
+	filter:alpha(opacity:50);opacity:0.5;
+	position: absolute;
+	right:202px;
+	top:235px;
+	display:none;
+}
+
+/*轮播*/
+/*#playBox{
+	position: relative;
+	width: 100%;
+	height: 515px;
+	background-color: #333;
+	overflow: hidden;
+}
+.oUlplay{
+	width: 99999px;
+	position: absolute;
+	left: 0;top: 0;
+}
+.oUlplay li{float: left;}
+.pre{
+	width:57px;height:57px;
+	cursor: pointer;
+	background:#000 url(../images/l.png) no-repeat;
+	position: absolute;
+	left:202px;top:235px;
+	z-index: 1000;
+	display: none;
+}
+.next{ 
+	width:57px;height:57px;
+	cursor: pointer;
+	background:#000 url(../images/r.png) no-repeat;
+	position: absolute;
+	right:202px;top:235px;
+	z-index:1000;
+	display: none;
+}
+.smalltitle {
+	width:100%; 
+	height:10px; 
+	position:absolute; 
+	bottom:15px; 
+	z-index:1000;
+}
+.smalltitle ul{
+	width:120px; 
+	margin:0 auto;
+}
+.smalltitle ul li{
+	width:10px; height:10px; 
+	margin:0 5px; 
+	border-radius:10px; 
+	background:#ffffff; 
+	float:left; 
+	overflow:hidden;
+	*display:inline;
+	*zoom:1;
+}
+.smalltitle .thistitle{ 
+	background:#4372C1;
+}*/
+
+/*搜索*/
+.Search{
+	margin-top: 82px;
+}
+#Search_input{
+	width: 515px;
+	height: 36px;
+	border-right:none;
+}
+#Search_span{
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 10px;
+	top: 1px;
+	right: 10px;
+	cursor: pointer;
+	background-color: #BED742;
+	font-size: 16px;
+}
+/*拿来定位校园卡片的*/
+.box{
+	margin:0 auto;
+	margin-top: 60px;
+	width: 360px;
+	height: 327px;
+	border: 1px solid #999999;
+}
+.hot_school{
+	width: 128px;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	top: 25px;
+	background-color: #BED742;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+}
+.school_ul{
+	margin-top: 25px;
+}
+.school{
+	width: 180px;
+	float: left;
+	margin-top: 28px;
+	font-family: '微软雅黑';
+	font-size: 16px;
+	font-weight: bold;
+}
+.school a{
+	color: #666666;
+}
+.school a:hover{
+	color: #BED742;
+}
+/*尾部*/
+.footer{
+	margin-top:63px;
+	height:90px;
+ }
+.footer_hr{
+	margin:0 auto;
+    width:850px;
+ }
+.footer_bottom_container{
+	margin:0 auto;
+	width:1000px;
+	height:90px;
+ }
+.footer_bottom_container p{
+	padding-top:15px;
+ 	font-family:'微软雅黑';
+	font-size:16px;
+	text-align:center;
+	color:#999999;
+}
+/*遮罩层*/
+#mask {
+	position: absolute; 
+	top: 0px;left: 0px;
+	display: none;
+	width: 100%;
+	/*height: 100%;*/
+	-moz-opacity: 0.7; 
+	opacity:.70; 
+	filter: alpha(opacity=70); 
+	background-color: #777;
+	z-index: 100;
+}

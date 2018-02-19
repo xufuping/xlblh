@@ -1,0 +1,295 @@
+*{
+	margin: 0;
+	padding-left: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: 微软雅黑;
+}
+html,body{
+	text-align: center;
+}
+/*登陆注册用户名*/
+.above{
+	width: 1000px;
+	height: 50px;
+	margin: 30px auto;
+	display: block;
+	position: relative;
+}
+.log{
+	width: 160px;
+	height: 100%;
+	float: left;
+}
+#Search_input{
+	width: 512px;
+	height: 35px;
+	margin-left: 30px;
+	float: left;
+	margin-top: 11px;
+	border:1px #e0e0e0 solid;
+}
+#Search_span{
+	width:98px;
+	height: 39px;
+	background: #bbd441;
+	border: none;
+	float: left;
+	margin-left: -4px;
+	margin-top: 11px;
+	border-radius: 5px;
+}
+#login{
+	color: #999;
+	position: absolute;
+	right: 75px;
+	top: 0;
+	text-decoration: none;
+}
+#regist{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #999;
+	text-decoration: none;
+}
+#login_userName{
+	color: #999;
+	position: absolute;
+	right: 75px;
+	top: 0;
+	text-decoration: none;
+}
+#login_close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #999;
+	text-decoration: none;
+}
+.newsword_wrap{
+	margin:0 auto;
+	width:1000px;
+}
+.newsword_contain{
+	margin:0 auto;
+	width:1000px;
+	margin-bottom: 60px;
+}
+h2{
+	margin-left:-860px;
+	padding-top:30px;
+ 	font-weight:bold;
+	font-size:24px;
+	color:#333333;
+}
+h3{
+	margin-top:-30px;
+	margin-right:-850px;
+  	font-weight:bold;
+	font-size:19px;
+	color:#333333;
+}
+hr{
+   margin-top:30px;
+}
+.news_img{
+	margin-top:30px;
+  	margin-left:65px;
+	width:875px;
+	height:340px;
+	background-color:#BED742;
+}
+.news_text{
+	margin-top:65px;
+	width:1000px;
+	height:1100px;
+ }
+h4{
+ 	font-weight:bold;
+	font-size:19px;
+	color:#333333;
+}
+p{
+	text-indent:2em;
+	margin-left:65px;
+	margin-top:30px;
+	text-align:left;
+	font-weight:bold;
+	font-size:16px;
+	color:#666666;
+}
+.word_h2{
+	margin-left:-920px;
+	padding-top:30px;
+ 	font-weight:bold;
+	font-size:24px;
+	color:#333333;
+}
+.comment{
+	height:600px;
+ 	margin:0 auto;
+ 	overflow:hidden;
+}
+.word01{
+	position:relative;
+ 	text-align:left;
+ 	top:20px;
+ 	margin-left:-30px;
+	font-weight:bold;
+	font-size:19px;
+	color:#333333;
+}
+.word02{
+	position:relative;
+	top:10px;
+   	margin-left:0px;
+   	height:43px;
+	font-weight:unset;
+	line-height:43px;
+ 	font-size:19px;
+	color:#B0B0B0;
+	border:1px solid #E7E7E7;
+}
+span.word03{
+	position:relative;
+    top:30px;
+    font-size:16px;
+	color:#B0B0B0;
+	margin-left:-850px;
+}
+.publish{
+	margin-top:100px;
+	height:480px;
+	width: 100%;
+	text-align: left;
+}
+.publish>div{
+	width: 42px;
+	height:30px;
+	background: #bbd441;
+	float: left;
+	margin-right: 25px;
+}
+.publish>span{
+	width:30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.publish_box{
+	height:350px;
+	width:700px;
+	border:1px solid #E7E7E7;
+}
+.publish textarea{
+	margin-top:20px;
+	width:999px;
+	height:346px;
+ 	resize:none;
+}
+.publish>button{
+	margin-top:30px;
+	width: 100px;
+	height: 30px;
+	background: #bbd441;
+	float:right;
+	margin-right:20px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*登录界面*/
+#close{
+	width: 25px;
+	height: 25px;
+	float: right;
+}
+#log_card{
+	text-align: center;
+	display: none;
+	z-index: 101;
+	margin: 0 auto;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left:-257px; 
+	width: 515px;
+	height:324px;
+	background: #FFFFFF;
+}
+.log_card_log{
+	margin-top: 58px;
+	font-family: '微软雅黑';
+	font-size: 24px;
+	font-weight: bold;
+}
+#userName{
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: 20px;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+}
+#password{
+	display: inline-block;
+	margin-top: 24px;
+	margin-right: 20px;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+}
+.userName{
+	width: 241px;
+	height: 27px;
+}
+.password{
+	width: 241px;
+	height: 27px;
+}
+.log_btn{
+	margin-top: 35px;
+	margin-left: 160px;
+	width: 241px;
+	height: 42px;
+	line-height: 42px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+	background-color: #BED742;
+}
+/*尾部*/
+.mancenter_hr{
+	margin:0 auto;
+    width:850px;
+ }
+.mancenter_bottom_container{
+	margin:0 auto;
+	width:1000px;
+	height:90px;
+ }
+.mancenter_bottom_container p{
+	padding-top:15px;
+ 	font-family:"微软雅黑";
+	font-size:16px;
+	text-align:center;
+	color:#999999;
+}
+/*遮罩层*/
+#mask {
+	position: absolute; 
+	top: 0px;left: 0px;
+	display: none;
+	width: 100%;
+	/*height: 100%;*/
+	-moz-opacity: 0.7; 
+	opacity:.70; 
+	filter: alpha(opacity=70); 
+	background-color: #777;
+	z-index: 100;
+}

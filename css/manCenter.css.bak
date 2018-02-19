@@ -1,0 +1,168 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.mancenter_wrap{
+	height:2175px;
+}
+.mancenter_contain{
+	margin:0 auto;
+	width:1000px;
+	height:2175px;
+}
+.mancenter_logo{
+	margin-top:30px;
+	width:160px;
+	height:50px;
+	background-color:#BED742;
+}
+span{
+	position: absolute;
+    margin-left: 190px;
+ 	font-size:35px;
+	font-family:微软雅黑;
+	font-weight:bold;
+	color:#333333;
+}
+.mancenter_msg{
+	margin-top:35px;
+	height:160px;
+}
+.mancenter_msg_box{
+	float:left;
+	width:230px;
+	height:160px;
+	border:0.1px solid #BED742;
+ }
+ .mancenter_msg_box img{
+    width:230px;
+	heigth:160px;
+ }
+.zphoto{
+	float:left;
+	width:230px;
+	height:160px;
+}
+.mancenter_msg_box1{
+	float:left;
+	margin-left:70px;
+	width:auto;
+	height:160px;
+}
+h2{
+	font-size:24px;
+	font-family:微软雅黑;
+	font-weight:bold;
+	color:#333333;
+}
+h3{
+	position:relative;
+	top:16px;
+	left:15px;
+	font-size:19px;
+	font-family:微软雅黑;
+	font-weight:bold;
+	color:#333333;
+}
+.mancenter_msg_box1 h2 a{
+	margin-left:15px;
+	text-decoration:none;
+	font-size:16px;
+	font-family:微软雅黑;
+	color:#C1C1C1;
+}
+.mancenter_msg_box1 p{
+	font-size:16px;
+	font-family:微软雅黑;
+	color:#C1C1C1;
+	line-height:45px;
+}
+.myPost, .myResponse, .myQuestion, .myAnswer{
+	margin-top:20px;
+	height:455px;
+}
+.myPost hr, .myResponse hr, .myQuestion hr, .myAnswer hr{
+	margin-top:20px;
+}
+.myPost p a, .myResponse p a, .myQuestion p a, .myAnswer p a{
+    float:right;
+    margin-top:15px;
+	font-size:13px;
+	font-family:微软雅黑;
+	text-decoration:none;
+	color:#808080;
+}
+.myPost .lookmore a, .myResponse .lookmore a, .myQuestion .lookmore a, .myAnswer .lookmore a{
+    position:relative;
+    top:370px;
+	float:right;
+    margin-top:15px;
+	font-size:13px;
+	font-family:微软雅黑;
+	text-decoration:none;
+	color:#808080;
+}
+.postTitle{
+	margin-top:25px;
+	height:100px;
+	width:998px;
+	border:1px solid #E7E7E7;
+}
+.postTitle h3 .Atitle{
+	position:relative;
+	left:0px;
+	font-size:19px;
+	text-decoration:none;
+	font-family:微软雅黑;
+	font-weight:bold;
+	color:#333333;
+}
+.postTitle .userAtitle{
+	position:relative;
+	float:right;
+	top:5px;
+ 	right:135px;
+	font-size:13px;
+	text-decoration:none;
+	font-family:微软雅黑;
+	font-weight:bold;
+	color:#A1A1A1;
+}
+.postTitle p{
+	position:relative;
+ 	top:40px;
+ 	right:-35px;
+ 	float:right;
+ 	margin-right:20px;
+   	font-size:13px;
+ 	font-family:微软雅黑;
+	font-weight:bold;
+	color:#A1A1A1;
+}
+.postTitle:hover{
+ 	background-color:#eaec63;
+	border-color:transparent;
+}
+.postTitle:hover h3, .postTitle:hover a, .postTitle:hover p{
+ 	color:#ffffff;
+}
+.mancenter_bottom{
+	margin-top:35px;
+	height:90px;
+ }
+.mancenter_hr{
+	margin:0 auto;
+    width:850px;
+ }
+.mancenter_bottom_container{
+	margin:0 auto;
+	width:1000px;
+	height:90px;
+ }
+.mancenter_bottom_container p{
+	padding-top:15px;
+ 	font-family:微软雅黑;
+	font-size:16px;
+	text-align:center;
+	color:#999999;
+}

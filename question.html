@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/question.css">
+	<script type="text/javascript" src="js/question.js"></script>
+	<script type="text/javascript" src="js/log.js"></script>
+	<title>你问我答</title>
+</head>
+<body>
+<!--头部-->
+	<div class="above">
+		<a href="shouye.html"><img src="images/logo.jpg" alt="log img" class="log"></a>
+		<input type="text" id="Search_input" placeholder="请输入学校名称">
+		<button id="Search_span">搜索</button>
+		<a href="" id="login">登录</a>
+    	<a href="register.html" id="regist">注册</a>
+    	<a href="manCenter.html" target="_Blank" id="login_userName"></a>
+		<a href="#" id="login_close">注销</a>
+	</div>
+<!-- 登录界面 -->
+	<div id="log_card">
+		<img src="images/close.jpg" alt="close" id="close">
+		<p class="log_card_log">登录</p>
+		<span id="userName">帐号</span>
+		<input type="text" class="userName"><br/>
+		<span id="password">密码</span>
+		<input type="password" class="password">
+		<div class="log_btn">登 录</div>
+	</div>
+<!-- 导航 -->
+	<div class="nav">
+		<div class="nav_content">
+			<ul class="nav_content_ul">
+				<li class="nav_content_ul_first"><a href="compusCulture.html" class="nav_content_li">校园文化</a></li>
+				<li><a href="newThings.html" class="nav_content_li">新鲜事儿</a></li>
+				<li><a href="liudaliuda.html" class="nav_content_li">溜达溜达</a></li>
+				<li><a href="learn.html" class="nav_content_li">我要学习</a></li>
+				<li><a href="talk.html" class="nav_content_li">唠唠嗑儿</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- 主体 -->
+	<div class="main">
+	<!-- 你问我答 -->
+		<div class="que">
+			<h3 class="que_title bor">你问我答</h3>
+			<div class="que_content">
+				<!-- <p class="que_content_li">
+					<span class="que_Name" id="que_Name">
+					<a href = "askAnswer.html">
+					问题内容
+					</a>
+					</span>
+					<span class="que_Username_1" id="Username">发帖账户</span>
+					<span class="que_Username_2" id="Username">最终回复账户</span>
+					<span class="que_Date" id="Date">回复时间</span>
+				</p> -->
+			</div>
+		</div>
+	<!-- 分页 -->
+		<div class="page">
+			<a class="page_prev page_change" id="page_prev">上一页</a>
+			<ul class="page_ul">
+				<!-- <li class="page_li">1</li>
+				<li class="page_li">2</li>
+				<li class="page_li">3</li>
+				<li class="page_li">4</li>
+				<li class="page_li">5</li>
+				<li class="page_li">6</li>
+				<li class="page_li">7</li>
+				<li class="page_li">8</li>
+				<li class="page_li">9</li>
+				<li class="page_last">10</li> -->
+			</ul>
+			<a class="page_next page_change" id="page_next">下一页</a>
+		</div>
+	<!-- 我要提问 -->
+		<div class="quiz">
+			<span class="quiz_block"></span>
+			<span>我要提问</span>
+			<form class="quiz_form" id="quiz_form" action="/getQuestionsBySchool.do">
+				<input type="textarea" class="input_title" name="input_title" placeholder="标题">
+				<div class="txt_content" id="txt_content" contenteditable="true"></div>
+				<input type="file"  id="btn_1" onchange="javascript:setImagePreview();">
+				<!-- <input type="button" value="插入图片" class="btn insert" id="btn_2"> -->
+				<input type="button" value="提交" class="btn submit"
+				id="sub">
+			</form>
+		</div>
+	</div>
+<!-- 尾部 -->
+	<div class="footer">
+		<div class="footer_bottom">
+			<p>版权所有 | 安徽财经大学C&U O-EXPO创业团队 | 技术负责 | 重庆邮电大学经济管理学院EMIT技术联盟 </p>
+	    <p>指导负责 | 安徽财经大学马克思学院 汪先平 | 管理邮箱 | hihunter@163.com</p>
+		</div>
+	</div>
+<div id="mask"></div>
+</body>
+</html>

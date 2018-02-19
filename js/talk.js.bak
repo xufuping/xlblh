@@ -1,0 +1,69 @@
+$(function(){
+	var COOKIE_NAME_userName = 'userName';
+	var COOKIE_NAME_password = 'password';
+	var COOKIE_NAME_userId = 'userId';
+	var COOKIE_NAME_schoolId = 'schoolId';
+	//判断是否缓存，如果缓存过直接调用
+	if($.cookie(COOKIE_NAME_userName)){
+		username = $.cookie(COOKIE_NAME_userName);
+		password = $.cookie(COOKIE_NAME_password);
+		userid = $.cookie(COOKIE_NAME_userId);
+		schooid = $.cookie(COOKIE_NAME_schoolId);
+	}else{
+		alert('登陆缓存已被清空');
+	}
+//点击加入讨论
+	/*$('.join').click(function() {
+		$.ajax({
+			type: 'GET',
+			url: '/getQuestionsBySchool',
+			data: {
+				schoolId: $.cookie(COOKIE_NAME_schoolId)
+			},
+			success: function () {
+				var newhref = "disTopic.html"
+			}
+		});
+
+// 	})*/
+//你问我答交互
+		$.ajax({
+			type: "GET",
+			url: "/getQuestionsBySchool.do",
+			data: {
+				page:1,
+				pageSize: 3,
+				schoolId: $.cookie(COOKIE_NAME_schoolId)
+			},
+			success: function (data) {
+				if (data.status === '0') {
+					alert(data.message);
+				}
+				else {
+					var talkContentStr = '';
+					var talkData = data.object;
+					for (var i = 0; i < talkData.length; i++) {
+						talkContentStr += '<p class="question_contain_all"><span class="question_contain_word"><a href="askAnswer.html?questionId=' + talkData[i].questionid + '">' + talkData[i].content
+										+ '</a></span><span class="Post_Username_1" id="Username">' + talkData[i].userid
+										+ '</span><span class="Post_Username_2" id="Username">' + talkData[i].createdate
+										+ '</span></p>';
+					}
+					$('.question_contain').html(talkContentStr);
+				}
+			}
+		});
+
+
+//搜索框
+	$('#Search_span').click(function(){
+		if (reg.test($('#Search_input').val())) {
+			//$('#Search_input').val()
+			window.location.href = "searchpage.html?sc="+$('#Search_input').val()+"";
+		}
+		else{
+			alert("不能为空或者数字或者特殊字符");
+		}
+	})
+
+
+})

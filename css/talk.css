@@ -1,0 +1,333 @@
+body, div, ul,li,h2, h3, h4,form, input,p{
+	margin: 0;
+	padding: 0;	
+}
+html,body{
+	text-align: center;
+}
+body{
+	font-family: "微软雅黑";
+}
+/*头部*/
+.above{
+	width: auto;
+	width: 1000px;
+	height: 50px;
+	margin: 30px 0 30px 0;
+	display: inline-block;
+	position: relative;
+}
+.log{
+	width: 160px;
+	height: 100%;
+	float: left;
+}
+#Search_input{
+	width: 512px;
+	height: 35px;
+	margin-left: 30px;
+	float: left;
+	margin-top: 11px;
+	border:1px #e0e0e0 solid;
+}
+#Search_span{
+	width:98px;
+	height: 39px;
+	background: #bbd441;
+	border: none;
+	float: left;
+	margin-left: -4px;
+	margin-top: 11px;
+	border-radius: 5px;
+}
+#login{
+	color: #999;
+	position: absolute;
+	right: 75px;
+	top: 0;
+	text-decoration: none;
+}
+#regist{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #999;
+	text-decoration: none;
+}
+#login_userName{
+	color: #999;
+	position: absolute;
+	right: 75px;
+	top: 0;
+	text-decoration: none;
+}
+#login_close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	color: #999;
+	text-decoration: none;
+}
+/*登录界面*/
+#close{
+	width: 25px;
+	height: 25px;
+	float: right;
+}
+#log_card{
+	text-align: center;
+	display: none;
+	z-index: 101;
+	margin: 0 auto;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left:-257px; 
+	width: 515px;
+	height:324px;
+	background: #FFFFFF;
+}
+.log_card_log{
+	margin-top: 58px;
+	font-family: '微软雅黑';
+	font-size: 24px;
+	font-weight: bold;
+}
+#userName{
+	display: inline-block;
+	margin-top: 30px;
+	margin-right: 20px;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+}
+#password{
+	display: inline-block;
+	margin-top: 24px;
+	margin-right: 20px;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+}
+.userName{
+	width: 241px;
+	height: 27px;
+}
+.password{
+	width: 241px;
+	height: 27px;
+}
+.log_btn{
+	margin-top: 35px;
+	margin-left: 160px;
+	width: 241px;
+	height: 42px;
+	line-height: 42px;
+	border-radius: 10px;
+	cursor: pointer;
+	font-family: '微软雅黑';
+	font-size: 18.67px;
+	font-weight: bold;
+	background-color: #BED742;
+}
+
+
+/*导航*/
+.nav{
+	width: 100%;
+	height: 50px;
+	background-color: #bed742;
+}
+.nav_content_ul{
+	width: 780px;
+	margin:0 auto;
+	list-style: none;
+	font-size: 24px;
+	font-weight: bold;
+	height: 50px;
+}
+.nav_content_ul li{
+	float: left;
+	width: 156px;
+	line-height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	cursor: pointer;
+}
+.nav_content_li{
+	text-decoration: none;
+	color: #fff;
+} 
+/*主体*/
+.mainImg{
+	position: relative;
+}
+.mainImg img{
+	width: 100%;
+	margin: 0 auto;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.join{
+	width: 183px;
+	height: 183px;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.6;
+	position: absolute;
+	left:50%;
+	margin-left:-83px;
+	top: 200px;
+	text-align: center;
+}
+.join a{
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 72px;
+	font-size: 32px;
+	font-weight: bold;
+	color: #333;
+}
+
+.mainImg>a{
+	display: block;
+	width: 120px;
+	height: 30px;
+	background-color: #aaa;
+	position: absolute;
+	background-color: #fff;
+	text-decoration: none;
+	color: #333;
+}
+.dis_1{
+	left: 20%;
+	top: 7.8%;
+}
+.dis_2{
+	left:49.5%;
+	top:4%;
+}
+.dis_3{
+	right: 14.5%;
+	top: 11.5%;
+}
+.dis_4{
+	left: 36%;
+	top: 33%;
+}
+.dis_5{
+	right: 26.5%;
+	top: 37%;
+}
+.question{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 60px;
+}
+.question_title{
+	width: 100%;
+	overflow: hidden;
+}
+.question_block{
+	display: block;
+	width: 123px;
+	height: 56px;
+	background-color: #bed742;
+	float: left;
+}
+.question_title_word{
+	line-height: 56px;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333;
+	margin-left: 30px;
+}
+.question_contain{
+	margin-top: 38px;
+	overflow: hidden;
+}
+.question_contain_all{
+	width: 833px;
+	height: 46px;
+	border: 1px solid #e7e7e7;
+	margin-bottom: 30px;
+	float: right;
+	padding-left: 10px;
+	padding-top: 10px;
+	position: relative;
+	cursor: pointer;
+	
+}
+.question_contain_word a{
+	position: absolute;
+	font-size: 18.67px;
+	font-weight: bold;
+	color: #333;
+	text-decoration: none;
+	left: 10px;
+	top: 10px;	
+}
+.Post_Username_1,.Post_Username_2{
+	font-size: 16px;
+	font-weight: bold;
+	color: #999;
+	position: absolute;
+}
+.Post_Username_1{
+	left: 675px;
+	bottom: 10px;
+}
+.Post_Username_2{
+	right: 10px;
+	bottom: 10px;
+}
+.more{
+	font-size: 16px;
+	font-weight: bold;
+	float: right;
+}
+.more a{
+	color: #999;
+	text-decoration: none;
+}
+/*尾部*/
+.footer{
+	width: 100%;
+}
+.footer_bottom{
+	width: 850px;
+	margin: 0 auto;
+	border-top: 1px solid #999;
+	font-size: 16px;
+	color: #999999;
+
+}
+.footer_bottom p{
+	text-align: center;
+	padding-top: 15px;
+
+}
+/*遮罩层*/
+#mask {
+	position: absolute; 
+	top: 0px;left: 0px;
+	display: none;
+	width: 100%;
+	/*height: 100%;*/
+	-moz-opacity: 0.7; 
+	opacity:.70; 
+	filter: alpha(opacity=70); 
+	background-color: #777;
+	z-index: 100;
+}
+/*动画效果*/
+.nav_content_ul li:hover {
+	background-color: #eaec63;
+	border-color: transparent;
+}
+.nav_content_ul li:hover .nav_content_li{
+	color: #333;
+}
